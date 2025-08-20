@@ -2,6 +2,11 @@ import { Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Header = () => {
+  const scrollToValues = () => {
+    const valuesSection = document.getElementById("values-section");
+    valuesSection?.scrollIntoView({ behavior: "smooth" });
+  };
+
   const scrollToAbout = () => {
     const aboutSection = document.getElementById("about-section");
     aboutSection?.scrollIntoView({ behavior: "smooth" });
@@ -31,7 +36,7 @@ const Header = () => {
             <a href="#history" className="text-foreground hover:text-primary transition-colors">
               História
             </a>
-            <a href="#values" className="text-foreground hover:text-primary transition-colors">
+            <a href="#values" className="text-foreground hover:text-primary transition-colors" onClick={scrollToValues}>
               Valores
             </a>
             <Button onClick={scrollToQuiz} variant="outline" size="sm">

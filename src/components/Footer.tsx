@@ -5,6 +5,18 @@ const Footer = () => {
     const aboutSection = document.getElementById("about-section");
     aboutSection?.scrollIntoView({ behavior: "smooth" });
   };
+
+  const scrollToValues = () => {
+    const valuesSection = document.getElementById("values-section");
+    valuesSection?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const scrollToQuiz = () => {
+    const quizSection = document.getElementById('quiz-section');
+    quizSection?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+
   
   return (
     <footer className="bg-military-green text-white py-12">
@@ -40,12 +52,12 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#values" className="text-green-100 hover:text-white transition-colors">
+                <a href="#values" className="text-green-100 hover:text-white transition-colors" onClick={scrollToValues}>
                   Valores Fundamentais
                 </a>
               </li>
               <li>
-                <a href="#quiz-section" className="text-green-100 hover:text-white transition-colors">
+                <a href="#quiz" className="text-green-100 hover:text-white transition-colors" onClick={scrollToQuiz}>
                   Teste de Conhecimentos
                 </a>
               </li>
