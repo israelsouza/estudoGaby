@@ -1,9 +1,9 @@
 function HistorySection() {
   return (
     <div className="p-8">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+      <div>
         <div>
-          <h3 className="text-2xl font-bold text-foreground mb-4">
+          <h3 className="text-3xl font-bold text-foreground mb-4 text-center">
             Nossa História
           </h3>
           <p className="text-muted-foreground mb-4">
@@ -18,7 +18,7 @@ function HistorySection() {
             prontos para defender o Brasil e contribuir para a paz mundial.
           </p>
         </div>
-        <div className="grid grid-cols-2 gap-4 text-center">
+        <div className="grid grid-cols-2 gap-4 text-center pt-8">
           <div className="bg-primary/10 p-4 rounded-lg">
             <div className="text-2xl font-bold text-primary">375+</div>
             <div className="text-sm text-muted-foreground">
