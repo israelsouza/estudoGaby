@@ -25,11 +25,11 @@ const Header = () => {
             <Shield className="h-8 w-8 text-primary" />
             <div>
               <h1 className="text-xl font-bold text-foreground">Exército Brasileiro</h1>
-              <p className="text-sm text-muted-foreground">Portal Informativo</p>
+              <p id="header__logo-text" className="text-sm text-muted-foreground">Portal Informativo</p>
             </div>
           </div>
           
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex items-center space-x-8">
             <a href="#about" className="text-foreground hover:text-primary transition-colors" onClick={scrollToAbout}>
               Sobre
             </a>
