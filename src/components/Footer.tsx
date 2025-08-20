@@ -1,6 +1,11 @@
 import { Shield, Mail, Phone, MapPin } from "lucide-react";
 
 const Footer = () => {
+  const scrollToAbout = () => {
+    const aboutSection = document.getElementById("about-section");
+    aboutSection?.scrollIntoView({ behavior: "smooth" });
+  };
+  
   return (
     <footer className="bg-military-green text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -25,7 +30,7 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Links Importantes</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#about" className="text-green-100 hover:text-white transition-colors">
+                <a href="#about" className="text-green-100 hover:text-white transition-colors" onClick={scrollToAbout}>
                   Sobre o Exército
                 </a>
               </li>

@@ -2,6 +2,11 @@ import { Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Header = () => {
+  const scrollToAbout = () => {
+    const aboutSection = document.getElementById("about-section");
+    aboutSection?.scrollIntoView({ behavior: "smooth" });
+  };
+  
   const scrollToQuiz = () => {
     const quizSection = document.getElementById('quiz-section');
     quizSection?.scrollIntoView({ behavior: 'smooth' });
@@ -20,7 +25,7 @@ const Header = () => {
           </div>
           
           <nav className="hidden md:flex space-x-8">
-            <a href="#about" className="text-foreground hover:text-primary transition-colors">
+            <a href="#about" className="text-foreground hover:text-primary transition-colors" onClick={scrollToAbout}>
               Sobre
             </a>
             <a href="#history" className="text-foreground hover:text-primary transition-colors">
