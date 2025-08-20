@@ -119,8 +119,21 @@ All colors MUST be HSL.
   }
 }
 
+
+
 @media (max-width: 884px) {
   #header__logo-text{
     display: none;
+  }
+  
+  #heroSection__btn-quiz{
+    color: hsl(var(--military-green))
+  }
+}
+
+@media (max-width: 500px) {
+  
+  .heroSection__container-btn{
+    padding-bottom: 10px;
   }
 }

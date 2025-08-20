@@ -29,7 +29,7 @@ const HeroSection = () => {
             Uma instituição centenária dedicada à defesa da pátria e do povo brasileiro.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-4 heroSection__container-btn">
             <Button 
               onClick={scrollToAbout}
               size="lg" 
@@ -38,6 +38,7 @@ const HeroSection = () => {
               Saiba Mais
             </Button>
             <Button 
+              id="heroSection__btn-quiz"
               variant="outline" 
               size="lg"
               className="border-white text-white hover:bg-white hover:text-military-green font-semibold px-8 py-3"
