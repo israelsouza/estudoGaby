@@ -15,37 +15,102 @@ interface Question {
 const questions: Question[] = [
   {
     id: 1,
-    question: "Em que ano foi fundado o Exército Brasileiro?",
-    options: ["1648", "1822", "1889", "1900"],
-    correctAnswer: 0,
+    question: "Qual o principal objetivo da pesquisa que findamenta o site, conforme explicito no material?",
+    options: ["Analisar a política de segurança nacional",
+     "Entender o setor administrativo do CMSE, formas de ingresso, perfil dos militares e sua avaliação.",
+      "Descrever os treinamentos intensos dos militares.",
+       "Avaliar o Estatuto dos Militares (Lei Nº 6.880/1980)."],
+    correctAnswer: 1,
     explanation: "O Exército Brasileiro foi fundado em 1648, durante o período colonial."
   },
   {
     id: 2,
-    question: "Qual é o lema do Exército Brasileiro?",
-    options: ["Ordem e Progresso", "Braço Forte, Mão Amiga", "Pátria ou Morte", "Sempre Prontos"],
-    correctAnswer: 1,
+    question: "De acordo com o texto, qual é a principal função do People Analytics na gestão de pessoas?",
+    options: ["Analisar dados de funcionários para traçar perfis e apoiar decisões.", 
+      "Avaliar apenas a parte física e mental de militares em missões.",
+       "Gerenciar a hierarquia e disciplina dentro das Forças Armadas", 
+       "Organizar documentos e arquivamento de processos internos"],
+    correctAnswer: 0,
     explanation: "O lema 'Braço Forte, Mão Amiga' representa a dupla missão do Exército: defesa nacional e apoio à sociedade."
   },
   {
     id: 3,
-    question: "Quantos são os valores fundamentais do Exército Brasileiro?",
-    options: ["4", "5", "6", "7"],
+    question: "A Metodologia DISC divide os indivíduos em quantas categorias de comportamento humano e quais são elas?",
+    options: ["Três categorias: Determinação, Sociabilidade e Organização", 
+      "Cinco categorias: Decisão, Integridade, Seriedade, Cuidado e Otimismo. ",
+       "Quatro categorias: Dominância, Influência, Estabilidade e Conformidade",
+        "Duas categorias: Extroversão e Introversão."],
     correctAnswer: 2,
     explanation: "São 6 valores fundamentais: Honra, Coragem, Disciplina, Patriotismo, Lealdade e Probidade."
   },
   {
     id: 4,
-    question: "Qual é a principal missão constitucional do Exército Brasileiro?",
-    options: ["Combate ao crime", "Defesa da pátria", "Educação militar", "Desenvolvimento social"],
+    question: "Qual foi o perfil comportamental predominante, identificado pela Metodologia DISC, entre os Sargentos e Oficiais Técnicos Temporários da área administrativa do CMSE?",
+    options: ["Dominância e Conformidade – 83% dos entrevistado", 
+      "Estabilidade e Influência – 42% cada.",
+       "Apenas Dominância – voltada à liderança.", 
+      "Conformidade – forte apego a regras."],
     correctAnswer: 1,
     explanation: "A defesa da pátria é a missão constitucional primária, garantindo a soberania nacional."
   },
   {
     id: 5,
-    question: "O que representa a cor verde no Exército Brasileiro?",
-    options: ["Natureza", "Esperança", "Pátria", "Todas as anteriores"],
+    question: "Segundo o estudo, qual porcentagem dos respondentes afirma que a carga pesada de trabalho, estresse constante, pressão e rigidez interfere no comportamento dos militares?",
+    options: ["42%",
+       "75%", 
+       "92%",
+        " 83%"],
     correctAnswer: 3,
+    explanation: "O verde representa a natureza brasileira, a esperança no futuro e o amor à pátria."
+  },
+   {
+    id: 6,
+    question: " Quais características são consideradas facilitadoras para o cargo administrativo no ambiente militar, de acordo com 75% dos pesquisados?",
+    options: ["Paciência, persistência e resistência a mudanças.",
+       "Sociabilidade, impulsividade e autoconfiança.", 
+       "Exatidão, curiosidade e apego a regras.",
+        "Ambição, foco em resultados, disciplina, iniciativa e competitividade."],
+    correctAnswer: 3,
+    explanation: "O verde representa a natureza brasileira, a esperança no futuro e o amor à pátria."
+  },
+   {
+    id: 7,
+    question: "Quanto tempo pode durar o processo seletivo para ingresso na área administrativa do CMSE como militar temporário e quais competências são exigidas por sua extensão e detalhamento?",
+    options: ["No máximo 50 dias, exigindo apenas preparo físico", 
+      "Entre 1 a 2 meses, exigindo comunicação e postura", 
+      "De quatro a seis meses, exigindo comprometimento, paciência e meticulosidade.", 
+      "Um ano, focado em conhecimento técnico e provas militares."],
+    correctAnswer: 2,
+    explanation: "O verde representa a natureza brasileira, a esperança no futuro e o amor à pátria."
+  },
+   {
+    id: 8,
+    question: "Quais são as principais atribuições do setor administrativo no Comando Militar do Sudeste (CMSE), conforme listado no texto?",
+    options: ["Administração documental, gestão financeira, de recursos, humanos e outros.", 
+      "Condução de treinamentos de combate", 
+      "Elaboração de estratégias e operações militares", 
+      "Proteção contra ameaças internas e externas"],
+    correctAnswer: 0,
+    explanation: "O verde representa a natureza brasileira, a esperança no futuro e o amor à pátria."
+  },
+   {
+    id: 9,
+    question: "Quais critérios de gestão são característicos dos processos internos do setor administrativo militar?",
+    options: ["Flexibilidade, decisões descentralizadas e improvisação.", 
+      "Alta rotatividade, orçamento imprevisível e baixa burocracia.",
+       "Hierarquia, padronização, controle, rastreabilidade, eficiência, confidencialidade e segurança da informação.",
+        "Novas tecnologias, autonomia e compartilhamento irrestrito de dados"],
+    correctAnswer: 2,
+    explanation: "O verde representa a natureza brasileira, a esperança no futuro e o amor à pátria."
+  },
+   {
+    id: 10,
+    question: "Qual dos seguintes itens NÃO é listado como um dos principais desafios enfrentados no cotidiano das operações internas do setor administrativo militar?",
+    options: ["Falta de hierarquia clara e cadeia de comando definida", 
+      "Dificuldade para integrar novas tecnologias",
+       "Quantidade exacerbada de demandas administrativas", 
+       "Burocracia que dificulta processos mais ágeisgi"],
+    correctAnswer: 0,
     explanation: "O verde representa a natureza brasileira, a esperança no futuro e o amor à pátria."
   }
 ];
