@@ -21,28 +21,6 @@ function HistorySection() {
                
             </p>
           </div>
-          <div className="grid grid-cols-2 gap-4 text-center pt-8">
-            <div className="bg-primary/10 p-4 rounded-lg">
-              <div className="text-2xl font-bold text-primary">375+</div>
-              <div className="text-sm text-muted-foreground">
-                Anos de História
-              </div>
-            </div>
-            <div className="bg-primary/10 p-4 rounded-lg">
-              <div className="text-2xl font-bold text-primary">220k+</div>
-              <div className="text-sm text-muted-foreground">Militares</div>
-            </div>
-            <div className="bg-primary/10 p-4 rounded-lg">
-              <div className="text-2xl font-bold text-primary">12</div>
-              <div className="text-sm text-muted-foreground">
-                Comandos Militares
-              </div>
-            </div>
-            <div className="bg-primary/10 p-4 rounded-lg">
-              <div className="text-2xl font-bold text-primary">100%</div>
-              <div className="text-sm text-muted-foreground">Do Brasil</div>
-            </div>
-          </div>
         </div>
       </div>
     </section>

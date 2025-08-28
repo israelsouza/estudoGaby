@@ -40,7 +40,7 @@ const Header = () => {
               Sobre
             </a>
             <a href="#history" className="text-foreground hover:text-primary transition-colors" onClick={scrollToHistory}>
-              História
+              Curiosidade
            </a>
             <a href="#values" className="text-foreground hover:text-primary transition-colors" onClick={scrollToValues}>
               Valores

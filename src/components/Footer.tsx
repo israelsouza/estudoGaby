@@ -59,7 +59,7 @@ const Footer = () => {
                   className="text-green-100 hover:text-white transition-colors"
                   onClick={scrollToHistory}
                 >
-                  Nossa História
+                  Curiosidade
                 </a>
               </li>
               <li>
