@@ -1,5 +1,6 @@
 import { Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const scrollToValues = () => {
@@ -33,9 +34,9 @@ const Header = () => {
             <a href="#about" className="text-foreground hover:text-primary transition-colors" onClick={scrollToAbout}>
               Sobre
             </a>
-            <a href="#history" className="text-foreground hover:text-primary transition-colors">
+            <Link to="/artigos">
               História
-            </a>
+            </Link>
             <a href="#values" className="text-foreground hover:text-primary transition-colors" onClick={scrollToValues}>
               Valores
             </a>

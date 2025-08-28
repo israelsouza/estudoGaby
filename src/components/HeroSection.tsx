@@ -1,12 +1,8 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-military.jpg";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
-  const scrollToAbout = () => {
-    const aboutSection = document.getElementById('about');
-    aboutSection?.scrollIntoView({ behavior: 'smooth' });
-  };
-
   return (
     <section className="relative bg-gradient-to-r from-military-green to-military-green-light text-white min-h-[80vh] flex items-center">
       <div className="absolute inset-0 opacity-20">
@@ -30,13 +26,14 @@ const HeroSection = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 heroSection__container-btn">
-            <Button 
-              onClick={scrollToAbout}
-              size="lg" 
-              className="bg-white text-military-green hover:bg-green-50 font-semibold px-8 py-3"
-            >
-              Saiba Mais
-            </Button>
+            <Link to="/artigos">
+              <Button 
+                size="lg" 
+                className="bg-white text-military-green hover:bg-green-50 font-semibold px-8 py-3"
+              >
+                Saiba Mais
+              </Button>
+            </Link>
             <Button 
               id="heroSection__btn-quiz"
               variant="outline" 
