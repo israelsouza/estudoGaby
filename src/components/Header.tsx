@@ -13,6 +13,11 @@ const Header = () => {
     aboutSection?.scrollIntoView({ behavior: "smooth" });
   };
   
+    const scrollToHistory = () => {
+    const aboutSection = document.getElementById("history-section");
+    aboutSection?.scrollIntoView({ behavior: "smooth" });
+  };
+
   const scrollToQuiz = () => {
     const quizSection = document.getElementById('quiz-section');
     quizSection?.scrollIntoView({ behavior: 'smooth' });
@@ -34,9 +39,9 @@ const Header = () => {
             <a href="#about" className="text-foreground hover:text-primary transition-colors" onClick={scrollToAbout}>
               Sobre
             </a>
-            <Link to="/artigos">
+            <a href="#history" className="text-foreground hover:text-primary transition-colors" onClick={scrollToHistory}>
               História
-            </Link>
+           </a>
             <a href="#values" className="text-foreground hover:text-primary transition-colors" onClick={scrollToValues}>
               Valores
             </a>

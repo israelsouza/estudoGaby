@@ -12,13 +12,16 @@ const Footer = () => {
     valuesSection?.scrollIntoView({ behavior: "smooth" });
   };
 
-  const scrollToQuiz = () => {
-    const quizSection = document.getElementById('quiz-section');
-    quizSection?.scrollIntoView({ behavior: 'smooth' });
+  const scrollToHistory = () => {
+    const aboutSection = document.getElementById("history-section");
+    aboutSection?.scrollIntoView({ behavior: "smooth" });
   };
 
+  const scrollToQuiz = () => {
+    const quizSection = document.getElementById("quiz-section");
+    quizSection?.scrollIntoView({ behavior: "smooth" });
+  };
 
-  
   return (
     <footer className="bg-military-green text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -33,8 +36,9 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-green-100 text-sm leading-relaxed">
-              Comprometidos com a defesa da pátria e o desenvolvimento nacional. 
-              Servindo o Brasil com honor, coragem e dedicação há mais de 375 anos.
+              Comprometidos com a defesa da pátria e o desenvolvimento nacional.
+              Servindo o Brasil com honor, coragem e dedicação há mais de 375
+              anos.
             </p>
           </div>
 
@@ -50,17 +54,29 @@ const Footer = () => {
 
               </li>
               <li>
-                <a href="#history" className="text-green-100 hover:text-white transition-colors">
+                <a
+                  href="#history"
+                  className="text-green-100 hover:text-white transition-colors"
+                  onClick={scrollToHistory}
+                >
                   Nossa História
                 </a>
               </li>
               <li>
-                <a href="#values" className="text-green-100 hover:text-white transition-colors" onClick={scrollToValues}>
+                <a
+                  href="#values"
+                  className="text-green-100 hover:text-white transition-colors"
+                  onClick={scrollToValues}
+                >
                   Valores Fundamentais
                 </a>
               </li>
               <li>
-                <a href="#quiz" className="text-green-100 hover:text-white transition-colors" onClick={scrollToQuiz}>
+                <a
+                  href="#quiz"
+                  className="text-green-100 hover:text-white transition-colors"
+                  onClick={scrollToQuiz}
+                >
                   Teste de Conhecimentos
                 </a>
               </li>
@@ -86,7 +102,6 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
         <div className="border-t border-green-700 mt-8 pt-8 text-center rodape__participacoes">
           <div className="rodape__participacoes--item rodape__dedicacao">
             <p>

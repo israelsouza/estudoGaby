@@ -21,7 +21,7 @@ const questions: Question[] = [
       "Descrever os treinamentos intensos dos militares.",
        "Avaliar o Estatuto dos Militares (Lei Nº 6.880/1980)."],
     correctAnswer: 1,
-    explanation: "O Exército Brasileiro foi fundado em 1648, durante o período colonial."
+    explanation: "O objetivo do site  busca compreender o funcionamento do setor administrativo do CMSE."
   },
   {
     id: 2,
@@ -31,7 +31,7 @@ const questions: Question[] = [
        "Gerenciar a hierarquia e disciplina dentro das Forças Armadas", 
        "Organizar documentos e arquivamento de processos internos"],
     correctAnswer: 0,
-    explanation: "O lema 'Braço Forte, Mão Amiga' representa a dupla missão do Exército: defesa nacional e apoio à sociedade."
+    explanation: "A principal função de People Analytics é analisar dados de funcinarios ou talentos, traçando perfis."
   },
   {
     id: 3,
@@ -41,7 +41,7 @@ const questions: Question[] = [
        "Quatro categorias: Dominância, Influência, Estabilidade e Conformidade",
         "Duas categorias: Extroversão e Introversão."],
     correctAnswer: 2,
-    explanation: "São 6 valores fundamentais: Honra, Coragem, Disciplina, Patriotismo, Lealdade e Probidade."
+    explanation: "A metodologia é divida em quatro categorias: Dominância, Influência, Estabilidade e Conformidade."
   },
   {
     id: 4,
@@ -51,7 +51,7 @@ const questions: Question[] = [
        "Apenas Dominância – voltada à liderança.", 
       "Conformidade – forte apego a regras."],
     correctAnswer: 1,
-    explanation: "A defesa da pátria é a missão constitucional primária, garantindo a soberania nacional."
+    explanation: "o perfil predominante foi estabilidade e Influência, ambos com 42% dos entrevistados."
   },
   {
     id: 5,
@@ -61,7 +61,7 @@ const questions: Question[] = [
        "92%",
         " 83%"],
     correctAnswer: 3,
-    explanation: "O verde representa a natureza brasileira, a esperança no futuro e o amor à pátria."
+    explanation: "83% dos respondentes afirma carga pesada de trabalho e estresse."
   },
    {
     id: 6,
@@ -71,7 +71,7 @@ const questions: Question[] = [
        "Exatidão, curiosidade e apego a regras.",
         "Ambição, foco em resultados, disciplina, iniciativa e competitividade."],
     correctAnswer: 3,
-    explanation: "O verde representa a natureza brasileira, a esperança no futuro e o amor à pátria."
+    explanation: "para o cargo administrativo no ambiente militar ambição, foco em resultados, disciplina, iniciativa e competitividade são facilitadoras."
   },
    {
     id: 7,
@@ -81,7 +81,7 @@ const questions: Question[] = [
       "De quatro a seis meses, exigindo comprometimento, paciência e meticulosidade.", 
       "Um ano, focado em conhecimento técnico e provas militares."],
     correctAnswer: 2,
-    explanation: "O verde representa a natureza brasileira, a esperança no futuro e o amor à pátria."
+    explanation: "são exigidas de quatro a seis meses."
   },
    {
     id: 8,
@@ -91,7 +91,7 @@ const questions: Question[] = [
       "Elaboração de estratégias e operações militares", 
       "Proteção contra ameaças internas e externas"],
     correctAnswer: 0,
-    explanation: "O verde representa a natureza brasileira, a esperança no futuro e o amor à pátria."
+    explanation: "As principais  atribuições são administração documental, gestão financeira, de recursos materiais e humanos, entre outras."
   },
    {
     id: 9,
@@ -101,7 +101,7 @@ const questions: Question[] = [
        "Hierarquia, padronização, controle, rastreabilidade, eficiência, confidencialidade e segurança da informação.",
         "Novas tecnologias, autonomia e compartilhamento irrestrito de dados"],
     correctAnswer: 2,
-    explanation: "O verde representa a natureza brasileira, a esperança no futuro e o amor à pátria."
+    explanation: "São criterios de gestão hierarquia e cadeia de comando, padronização, controle e rastreabilidade."
   },
    {
     id: 10,
@@ -111,7 +111,7 @@ const questions: Question[] = [
        "Quantidade exacerbada de demandas administrativas", 
        "Burocracia que dificulta processos mais ágeisgi"],
     correctAnswer: 0,
-    explanation: "O verde representa a natureza brasileira, a esperança no futuro e o amor à pátria."
+    explanation: "Não é listado como um principal desafio falta de hierarquia clara e cadeia de comando definida."
   }
 ];
 
@@ -248,9 +248,9 @@ const QuizSection = () => {
                 {questions[currentQuestion].question}
               </h3>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {questions[currentQuestion].options.map((option, index) => (
-                  <Button
+                    <Button
                     key={index}
                     variant={
                       selectedAnswer === null 
@@ -263,7 +263,7 @@ const QuizSection = () => {
                             ? "default"
                             : "outline"
                     }
-                    className={`p-4 h-auto text-left justify-start ${
+                    className={`p-4 h-auto text-left justify-start whitespace-normal break-words ${
                       selectedAnswer !== null && "cursor-not-allowed"
                     }`}
                     onClick={() => handleAnswerSelect(index)}
