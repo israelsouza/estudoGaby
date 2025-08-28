@@ -1,4 +1,5 @@
 import AnalyticsArticle from "@/components/AnalyticsArticle";
+import Comportamental from "@/components/Comportamental";
 import HeaderArticles from "@/components/HeaderArticles";
 import IntroductionArticle from "@/components/IntroductionArticle";
 
@@ -7,6 +8,7 @@ const Articles = () => {
     <HeaderArticles />
     <IntroductionArticle />
     <AnalyticsArticle />
+    <Comportamental />
   </div>;
 };
 

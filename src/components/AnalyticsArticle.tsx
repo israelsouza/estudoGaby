@@ -25,12 +25,12 @@ function AnalyticsArticle() {
   ];
 
   return (
-    <div>
-      <h2 className="text-3xl font-bold text-foreground mb-4 text-center">
+    <div className="py-20 bg-gradient-to-b from-muted to-muted max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 className="text-3xl font-bold text-foreground mb-4 text-center text-center mb-16">
         People Analytics e Metodologia DISC
       </h2>
       <div>
-        <p className="text-muted-foreground mb-4">
+        <p className="text-muted-foreground mb-4 text-lg text-justify text-muted-foreground max-w-3xl mx-auto">
           People Analytics é uma ferramenta utilizada na gestão de pessoas que
           analisa dados de funcionários ou possíveis talentos para traçar perfis
           comportamentais e tomar decisões embasadas. A coleta de dados é feita
@@ -39,7 +39,7 @@ function AnalyticsArticle() {
           relevante para áreas como qualificação de dados, gestão de desempenho,
           treinamento, recrutamento e seleção.
         </p>
-        <p className="text-muted-foreground mb-4">
+        <p className="text-muted-foreground mb-4 text-lg text-justify text-muted-foreground max-w-3xl mx-auto">
           A Metodologia DISC, desenvolvida pelo psicólogo William Moulton
           Marston em 1928, tem como objetivo analisar as tendências
           comportamentais das pessoas no ambiente organizacional. Ela divide os
@@ -65,18 +65,18 @@ function AnalyticsArticle() {
           ))}
         </div>
 
-        <p className="text-muted-foreground mb-4">
+        <p className="text-muted-foreground mb-4 text-lg text-justify text-muted-foreground max-w-3xl mx-auto">
           O estudo utilizou o People Analytics associado à Metodologia DISC para
           mapear o perfil comportamental dos Sargentos e Oficiais Técnicos
           Temporários da área administrativa do Comando Militar do Sudeste
           (CMSE).
         </p>
-        <p className="text-muted-foreground mb-4">
+        <p className="text-muted-foreground mb-4 text-lg text-justify text-muted-foreground max-w-3xl mx-auto">
           Os resultados de um questionário com 25 perguntas fechadas indicaram
           um equilíbrio significativo entre o perfil de Estabilidade (42%) e
           Influência (42%) entre os entrevistados.
         </p>
-        <p className="text-muted-foreground mb-4">
+        <p className="text-muted-foreground mb-4 text-lg text-justify text-muted-foreground max-w-3xl mx-auto">
           Este equilíbrio é considerado condizente com a estrutura
           organizacional militar, que se baseia em disciplina, hierarquia,
           lealdade e trabalho em equipe. Pessoas com perfil de Estabilidade são
