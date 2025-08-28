@@ -109,6 +109,29 @@ All colors MUST be HSL.
   }
 }
 
+.rodape__participacoes{
+  display: flex;
+  gap: 10%;
+  text-align: left;
+}
+
+.rodape__dedicacao{
+  max-width: 400px ;
+  text-align: justify;
+}
+
+.rodape__participacoes--item{
+  flex-direction: column
+}
+
+@media (max-width: 1005px) {
+  .rodape__participacoes{
+    display: flex;
+    gap: 5%;
+    text-align: left;
+  }
+}
+
 @layer base {
   * {
     @apply border-border;

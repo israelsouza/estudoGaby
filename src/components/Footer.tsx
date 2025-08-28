@@ -1,4 +1,5 @@
 import { Shield, Mail, Phone, MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const scrollToAbout = () => {
@@ -42,9 +43,11 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Links Importantes</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#about" className="text-green-100 hover:text-white transition-colors" onClick={scrollToAbout}>
-                  Sobre o Exército
-                </a>
+
+                  <Link to="/#about" className="text-green-100 hover:text-white transition-colors" onClick={scrollToAbout}>
+                  Sobre
+                  </Link>
+
               </li>
               <li>
                 <a href="#history" className="text-green-100 hover:text-white transition-colors">
@@ -84,11 +87,30 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-green-700 mt-8 pt-8 text-center">
-          <p className="text-green-100 text-sm">
-            © 2024 Exército Brasileiro. Todos os direitos reservados. | 
-            <span className="ml-1">Desenvolvido para fins educativos</span>
-          </p>
+        <div className="border-t border-green-700 mt-8 pt-8 text-center rodape__participacoes">
+          <div className="rodape__participacoes--item rodape__dedicacao">
+            <p>
+              Esse site foi formulado com o instituto de divulgar a pesquisa realizada pela bolsista do Cento Nacional de Pesquisa (CNPq) Gabriela Orsi estudante de Gestão de Recursos Humanos da Fatec Zona Leste. 
+            </p>
+          </div>
+
+          <div className="rodape__participacoes--item">
+            <h2 className="mb-5">Autora e orientadora</h2>
+            <ul>
+              <li>Gabriela Gomes Orsi Ragagnan</li>
+              <li>Janaina Rute da Silva Dourado</li>
+            </ul>
+          </div>
+
+          <div className="rodape__participacoes--item">
+            <h2 className="mb-5">Desenvolvedores</h2>
+            <ul>
+              <li>Victor Trindade dos Santos</li>      
+              <li>Sofia Floriano Amorim</li>
+              <li>Israel de Souza Lima</li>
+            </ul>
+          </div>
+
         </div>
       </div>
     </footer>
