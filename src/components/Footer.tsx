@@ -102,28 +102,36 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="border-t border-green-700 mt-8 pt-8 text-center rodape__participacoes">
-          <div className="rodape__participacoes--item rodape__dedicacao">
+
+
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 border-t border-green-700 mt-8 pt-8">
+          
+          <div className="flex items-center space-x-3 mb-4">
             <p>
               Esse site foi formulado com o instituto de divulgar a pesquisa realizada pela bolsista do Cento Nacional de Pesquisa (CNPq) Gabriela Orsi estudante de Gestão de Recursos Humanos da Fatec Zona Leste. 
             </p>
           </div>
 
-          <div className="rodape__participacoes--item">
-            <h2 className="mb-5">Autora e orientadora</h2>
-            <ul>
-              <li>Gabriela Gomes Orsi Ragagnan</li>
-              <li>Janaina Rute da Silva Dourado</li>
-            </ul>
+          <div className="flex items-center space-x-3 mb-4">
+            <div>
+              <h2 className="mb-5">Autora e orientadora</h2>
+              <ul>
+                <li>Gabriela Gomes Orsi Ragagnan</li>
+                <li>Janaina Rute da Silva Dourado</li>
+              </ul>
+            </div>
           </div>
 
-          <div className="rodape__participacoes--item">
-            <h2 className="mb-5">Desenvolvedores</h2>
-            <ul>
-              <li>Victor Trindade dos Santos</li>      
-              <li>Sofia Floriano Amorim</li>
-              <li>Israel de Souza Lima</li>
-            </ul>
+          <div className="flex items-center space-x-3 mb-4">
+            <div>
+              <h2 className="mb-5">Desenvolvedores</h2>
+              <ul>
+                <li>Victor Trindade dos Santos</li>      
+                <li>Sofia Floriano Amorim</li>
+                <li>Israel de Souza Lima</li>
+              </ul>
+            </div>
           </div>
 
         </div>
