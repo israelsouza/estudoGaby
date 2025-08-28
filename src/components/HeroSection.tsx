@@ -26,21 +26,21 @@ const HeroSection = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 heroSection__container-btn">
-            <Link to="/artigos">
               <Button 
                 size="lg" 
                 className="bg-white text-military-green hover:bg-green-50 font-semibold px-8 py-3"
               >
+            <Link to="/artigos">
                 Saiba Mais
-              </Button>
             </Link>
+              </Button>
             <Button 
               id="heroSection__btn-quiz"
-              variant="outline" 
               size="lg"
               className="border-white text-white hover:bg-white hover:text-military-green font-semibold px-8 py-3"
               onClick={() => document.getElementById('quiz-section')?.scrollIntoView({ behavior: 'smooth' })}
-            >
+              variant="outline" 
+              >
               Teste seus Conhecimentos
             </Button>
           </div>
