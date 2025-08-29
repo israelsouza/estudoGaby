@@ -1,4 +1,4 @@
-import { Shield, Mail, Phone, MapPin } from "lucide-react";
+import { Shield, Mail, Phone, MapPin, Github, Linkedin } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -49,9 +49,9 @@ const Footer = () => {
               <li>
 
                   <Link to="/#about-section" className="text-green-100 hover:text-white transition-colors" onClick={scrollToAbout}>
-                  Sobre
-                  </Link>
 
+                  Sobre
+                </Link>
               </li>
               <li>
                 <Link to="/#history-section"
@@ -100,13 +100,13 @@ const Footer = () => {
           </div>
         </div>
 
-
-
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 border-t border-green-700 mt-8 pt-8">
-          
           <div className="flex items-center space-x-3 mb-4">
             <p>
-              Esse site foi formulado com o instituto de divulgar a pesquisa realizada pela bolsista do Cento Nacional de Pesquisa (CNPq) Gabriela Orsi estudante de Gestão de Recursos Humanos da Fatec Zona Leste. 
+              Esse site foi formulado com o instituto de divulgar a pesquisa
+              realizada pela bolsista do Cento Nacional de Pesquisa (CNPq)
+              Gabriela Orsi estudante de Gestão de Recursos Humanos da Fatec
+              Zona Leste.
             </p>
           </div>
 
@@ -114,8 +114,25 @@ const Footer = () => {
             <div>
               <h2 className="mb-5">Autora e orientadora</h2>
               <ul>
-                <li>Gabriela Gomes Orsi Ragagnan</li>
-                <li>Janaina Rute da Silva Dourado</li>
+                <li>
+                  {" "}
+                  <a
+                    href="https://linkedin.com/in/seuusuario"
+                    className="flex items-center gap-2 text-white px-3 py-2 rounded-lg hover:bg-blue-600 transition w-fit"
+                  >
+                    <Linkedin className="w-5 h-5" />
+                    Gabriela Gomes Orsi Ragagnan
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://linkedin.com/in/seuusuario"
+                    className="flex items-center gap-2 text-white px-3 py-2 rounded-lg hover:bg-blue-600 transition w-fit"
+                  >
+                    <Linkedin className="w-5 h-5" />
+                    Janaina Rute da Silva Dourado
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
@@ -123,14 +140,37 @@ const Footer = () => {
           <div className="flex items-center space-x-3 mb-4">
             <div>
               <h2 className="mb-5">Desenvolvedores</h2>
-              <ul>
-                <li>Victor Trindade dos Santos</li>      
-                <li>Sofia Floriano Amorim</li>
-                <li>Israel de Souza Lima</li>
+              <ul className="space-y-2">
+                <li>
+                  <a
+                    href="https://github.com/victor-trindade-santos"
+                    className="flex items-center gap-2  text-white px-3 py-2 rounded-lg hover:bg-gray-800 transition w-fit"
+                  >
+                    <Github className="w-5 h-5" />
+                    <span>Victor Trindade dos Santos</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/Sofia-gith"
+                    className="flex items-center gap-2  text-white px-3 py-2 rounded-lg hover:bg-gray-800 transition w-fit"
+                  >
+                    <Github className="w-5 h-5" />
+                    <span>Sofia Floriano Amorim</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/israelsouza"
+                    className="flex items-center gap-2 text-white px-3 py-2 rounded-lg hover:bg-gray-800 transition w-fit"
+                  >
+                    <Github className="w-5 h-5" />
+                    <span>Israel de Souza Lima</span>
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
-
         </div>
       </div>
     </footer>
