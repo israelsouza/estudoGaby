@@ -44,8 +44,16 @@ All colors MUST be HSL.
     --military-gray-light: 210 8% 85%;
 
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--military-green)) 0%, hsl(var(--military-green-light)) 100%);
-    --gradient-section: linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--muted)) 100%);
+    --gradient-hero: linear-gradient(
+      135deg,
+      hsl(var(--military-green)) 0%,
+      hsl(var(--military-green-light)) 100%
+    );
+    --gradient-section: linear-gradient(
+      180deg,
+      hsl(var(--background)) 0%,
+      hsl(var(--muted)) 100%
+    );
 
     /* Shadows */
     --shadow-military: 0 10px 30px -10px hsl(var(--military-green) / 0.2);
@@ -109,23 +117,23 @@ All colors MUST be HSL.
   }
 }
 
-.rodape__participacoes{
+.rodape__participacoes {
   display: flex;
   gap: 10%;
   text-align: left;
 }
 
-.rodape__dedicacao{
-  max-width: 400px ;
+.rodape__dedicacao {
+  max-width: 400px;
   text-align: justify;
 }
 
-.rodape__participacoes--item{
-  flex-direction: column
+.rodape__participacoes--item {
+  flex-direction: column;
 }
 
 @media (max-width: 1005px) {
-  .rodape__participacoes{
+  .rodape__participacoes {
     display: flex;
     gap: 5%;
     text-align: left;
@@ -142,21 +150,18 @@ All colors MUST be HSL.
   }
 }
 
-
-
 @media (max-width: 884px) {
-  #header__logo-text{
+  #header__logo-text {
     display: none;
   }
-  
-  #heroSection__btn-quiz{
-    color: hsl(var(--military-green))
+
+  #heroSection__btn-quiz {
+    color: hsl(var(--military-green));
   }
 }
 
 @media (max-width: 500px) {
-  
-  .heroSection__container-btn{
+  .heroSection__container-btn {
     padding-bottom: 10px;
   }
 }
