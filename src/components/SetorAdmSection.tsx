@@ -37,21 +37,21 @@ const SetorAdmSection = () => {
   return (
     <section
       id="SetorAdmSection"
-      className="py-20 bg-gradient-to-b from-background to-muted"
+      className="py-20 bg-gradient-to-b from-muted to-muted"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             Como ingressar no Setor Administrativo do CMSE
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-justify">
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-justify pt-10">
             O ingresso na área administrativa do CMSE ocorre como militar
             temporário através de um processo seletivo simplificado. As vagas
             são divulgadas anualmente para Sargento Técnico Temporário (STT)
             (exige formação técnica e ensino médio) e Oficial Técnico Temporário
             (OTT) (exige nível superior na área). As etapas do processo seletivo
             são bem semelhantes e incluem:
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-8">
               {values.map((value, index) => (
                 <Card
                   key={index}

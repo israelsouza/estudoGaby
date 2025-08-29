@@ -3,7 +3,7 @@ function IntroductionArticle() {
     <div className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h1 className="text-3xl font-bold text-foreground mb-4 text-center">Introdução</h1>
       <div>
-        <p className="text-muted-foreground mb-4 text-lg text-justify text-muted-foreground max-w-3xl mx-auto">
+        <p className="pt-10 text-muted-foreground mb-4 text-lg text-justify text-muted-foreground max-w-3xl mx-auto">
           O militar do exército é o profissional que tem a função de proteger o
           país de ameaças internas ou externas, dessa maneira promovendo e
           mantendo a paz. Para isso, é submetido a um treinamento intenso que

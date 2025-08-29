@@ -30,7 +30,7 @@ function AnalyticsArticle() {
         People Analytics e Metodologia DISC
       </h2>
       <div>
-        <p className="text-muted-foreground mb-4 text-lg text-justify text-muted-foreground max-w-3xl mx-auto">
+        <p className="pt-10 text-muted-foreground mb-4 text-lg text-justify text-muted-foreground max-w-3xl mx-auto">
           People Analytics é uma ferramenta utilizada na gestão de pessoas que
           analisa dados de funcionários ou possíveis talentos para traçar perfis
           comportamentais e tomar decisões embasadas. A coleta de dados é feita

@@ -3,7 +3,7 @@ function Comportamental() {
     <div className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 className="text-3xl font-bold text-foreground mb-4 text-center">Perfil Comportamental dos Militares do CMSE</h2>
       <div>
-        <p className="text-muted-foreground mb-4 text-lg text-justify text-muted-foreground max-w-3xl mx-auto">
+        <p className="pt-10 text-muted-foreground mb-4 text-lg text-justify text-muted-foreground max-w-3xl mx-auto">
           A carreira militar expõe o indivíduo a situações constantes de estresse, ansiedade e pressão, exigindo preparo físico e mental resiliente. O desgaste pode gerar o Estresse Ocupacional, um distúrbio causado pela falta de habilidades para enfrentar a deterioração da função.
         </p>
         <p className="text-muted-foreground mb-4 text-lg text-justify text-muted-foreground max-w-3xl mx-auto">
