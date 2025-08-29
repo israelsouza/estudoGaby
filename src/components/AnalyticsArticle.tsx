@@ -1,6 +1,17 @@
 import { Card, CardContent } from "./ui/card";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 function AnalyticsArticle() {
+    useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      const el = document.getElementById(hash.replace("#", ""));
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [useLocation()]);
   const features = [
     {
       title: "Dominância",
@@ -25,7 +36,7 @@ function AnalyticsArticle() {
   ];
 
   return (
-    <div className="py-20 bg-gradient-to-b from-muted to-muted max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div id="people" className="py-20 bg-gradient-to-b from-muted to-muted max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 className="text-3xl font-bold text-foreground mb-4 text-center text-center mb-16">
         People Analytics e Metodologia DISC
       </h2>

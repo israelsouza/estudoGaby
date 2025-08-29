@@ -1,29 +1,44 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Shield, Target, Users, Award } from "lucide-react";
+import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
+
 
 const AboutSection = () => {
-  const features = [
-    {
-      icon: Shield,
-      title: "Defesa Nacional",
-      description: "Proteção da soberania e integridade territorial do Brasil, garantindo a segurança da nação."
-    },
-    {
-      icon: Target,
-      title: "Missão Estratégica",
-      description: "Preparação e emprego do poder militar terrestre para defesa da pátria e garantia dos poderes constitucionais."
-    },
-    {
-      icon: Users,
-      title: "Desenvolvimento Social",
-      description: "Contribuição para o desenvolvimento nacional e participação em missões de paz internacionais."
-    },
-    {
-      icon: Award,
-      title: "Excelência Operacional",
-      description: "Formação de profissionais qualificados e modernização constante das capacidades militares."
+  const location = useLocation();
+
+useEffect(() => {
+  if (location.hash) {
+    const el = document.getElementById(location.hash.replace("#", ""));
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
     }
-  ];
+  }
+}, [location]);
+
+const features = [
+  {
+    id: '/artigos#people',
+    title: "People Analytics e Metodologia DISC",
+    description: "Aplicação de análise de dados e perfil comportamental para aprimorar a gestão e o desenvolvimento dos militares."
+  },
+  {
+    id: '/artigos#comportamental',
+    title: "Perfil Comportamental dos Militares do CMSE",
+    description: "Identificação das características e competências dos militares, promovendo equipes mais eficientes e integradas."
+  },
+  {
+    id: '/artigos#SetorAdmSection',
+    title: "Como ingressar no Setor Administrativo do CMSE",
+    description: "Informações sobre requisitos, processos seletivos e oportunidades para atuar no setor administrativo do CMSE."
+  },
+  {
+    id: '/artigos#ProcessosInternosSection',
+    title: "Processos internos do Setor Administrativo Militar do CMSE",
+    description: "Descrição dos procedimentos, rotinas e boas práticas que garantem a eficiência administrativa no ambiente militar."
+  }
+];
 
   return (
     <section id="about-section" className="py-20 bg-gradient-to-b from-background to-muted">
@@ -40,9 +55,10 @@ const AboutSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {features.map((feature, index) => (
+            <Link to={feature.id}>
             <Card key={index} className="text-center hover:shadow-lg transition-shadow duration-300">
               <CardContent className="pt-6">
-                <feature.icon className="h-12 w-12 text-primary mx-auto mb-4" />
+                {/* <feature.icon className="h-12 w-12 text-primary mx-auto mb-4" /> */}
                 <h3 className="text-lg font-semibold text-foreground mb-2">
                   {feature.title}
                 </h3>
@@ -51,6 +67,7 @@ const AboutSection = () => {
                 </p>
               </CardContent>
             </Card>
+            </Link>
           ))}
         </div>
 

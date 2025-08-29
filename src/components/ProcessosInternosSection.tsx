@@ -1,6 +1,17 @@
 import { Card, CardContent } from "./ui/card";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 function ProcessosInternosSection() {
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      const el = document.getElementById(hash.replace("#", ""));
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [useLocation()]);
   const features = [
     {
       description:

@@ -1,6 +1,20 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
+
 
 const ValuesSection = () => {
+  const location = useLocation();
+
+useEffect(() => {
+  if (location.hash) {
+    const el = document.getElementById(location.hash.replace("#", ""));
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+}, [location]);
   const values = [
     {
       title: "Honra",

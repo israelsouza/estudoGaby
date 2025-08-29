@@ -4,6 +4,8 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { CheckCircle, XCircle, RotateCcw, Trophy } from "lucide-react";
 
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 interface Question {
   id: number;
   question: string;
@@ -116,6 +118,17 @@ const questions: Question[] = [
 ];
 
 const QuizSection = () => {
+  const location = useLocation();
+
+useEffect(() => {
+  if (location.hash) {
+    const el = document.getElementById(location.hash.replace("#", ""));
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+}, [location]);
+
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
   const [score, setScore] = useState(0);

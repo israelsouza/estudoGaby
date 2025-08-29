@@ -1,4 +1,18 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
+
 function HistorySection() {
+  const location = useLocation();
+
+useEffect(() => {
+  if (location.hash) {
+    const el = document.getElementById(location.hash.replace("#", ""));
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+}, [location]);
   return (
     <section id="history-section">
       <div className="p-8">

@@ -1,5 +1,5 @@
 function Comportamental() {
-  return (
+  return (<section id="comportamental">
     <div className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 className="text-3xl font-bold text-foreground mb-4 text-center">Perfil Comportamental dos Militares do CMSE</h2>
       <div>
@@ -23,6 +23,7 @@ function Comportamental() {
         </p>
       </div>
     </div>
+    </section>
   );
 }
 

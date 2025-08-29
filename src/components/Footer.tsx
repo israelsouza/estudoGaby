@@ -48,37 +48,34 @@ const Footer = () => {
             <ul className="space-y-2 text-sm">
               <li>
 
-                  <Link to="/#about" className="text-green-100 hover:text-white transition-colors" onClick={scrollToAbout}>
+                  <Link to="/#about-section" className="text-green-100 hover:text-white transition-colors" onClick={scrollToAbout}>
                   Sobre
                   </Link>
 
               </li>
               <li>
-                <a
-                  href="#history"
+                <Link to="/#history-section"
                   className="text-green-100 hover:text-white transition-colors"
                   onClick={scrollToHistory}
                 >
                   Curiosidade
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#values"
+                <Link to="/#values-section"
                   className="text-green-100 hover:text-white transition-colors"
                   onClick={scrollToValues}
                 >
                   Valores Fundamentais
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#quiz"
+                <Link to="/#quiz-section"
                   className="text-green-100 hover:text-white transition-colors"
                   onClick={scrollToQuiz}
                 >
                   Teste de Conhecimentos
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

@@ -1,6 +1,17 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const SetorAdmSection = () => {
+    useEffect(() => {
+      const hash = window.location.hash;
+      if (hash) {
+        const el = document.getElementById(hash.replace("#", ""));
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    }, [useLocation()]);
   const values = [
     {
       title: "Aviso de Convocação",
