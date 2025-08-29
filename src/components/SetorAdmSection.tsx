@@ -28,14 +28,14 @@ const SetorAdmSection = () => {
             Como ingressar no Setor Administrativo do CMSE
           </h2>
 
-          {/* Primeiro parágrafo */}
+         
           <div className="text-muted-foreground mb-8 text-lg text-justify max-w-3xl mx-auto space-y-6">
             <FadeInParagraph index={0}>
               {paragraphs[0]}
             </FadeInParagraph>
           </div>
 
-          {/* Cards centralizados */}
+  
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto my-16">
             {values.map((value, index) => (
               <Card
@@ -54,7 +54,7 @@ const SetorAdmSection = () => {
             ))}
           </div>
 
-          {/* Demais parágrafos */}
+    
           <div className="text-muted-foreground mb-4 text-lg text-justify max-w-3xl mx-auto space-y-6">
             <FadeInParagraph index={1}>
               {paragraphs[1]}
