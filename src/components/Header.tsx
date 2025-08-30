@@ -48,6 +48,9 @@ const Header = () => {
             <Button onClick={scrollToQuiz} variant="outline" size="sm">
               Teste seus Conhecimentos
             </Button>
+
+
+            
           </nav>
         </div>
       </div>
