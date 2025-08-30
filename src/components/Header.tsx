@@ -36,13 +36,13 @@ const Header = () => {
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#about" className="text-foreground hover:text-primary transition-colors" onClick={scrollToAbout}>
+            <a className="cursor-pointer text-foreground hover:text-primary transition-colors" onClick={scrollToAbout}>
               Sobre
             </a>
-            <a href="#history" className="text-foreground hover:text-primary transition-colors" onClick={scrollToHistory}>
+            <a className="cursor-pointer text-foreground hover:text-primary transition-colors" onClick={scrollToHistory}>
               Curiosidade
            </a>
-            <a href="#values" className="text-foreground hover:text-primary transition-colors" onClick={scrollToValues}>
+            <a className="cursor-pointer text-foreground hover:text-primary transition-colors" onClick={scrollToValues}>
               Valores
             </a>
             <Button onClick={scrollToQuiz} variant="outline" size="sm">
