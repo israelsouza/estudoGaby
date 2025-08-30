@@ -117,7 +117,7 @@ const Footer = () => {
                 <li>
                   {" "}
                   <a
-                    href="https://linkedin.com/in/seuusuario"
+                    href="https://www.linkedin.com/in/gabriela-gomes-orsi-ragagnan-156aa4287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                     className="flex items-center gap-2 text-white px-3 py-2 rounded-lg hover:bg-blue-600 transition w-fit"
                   >
                     <Linkedin className="w-5 h-5" />
@@ -126,7 +126,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="https://linkedin.com/in/seuusuario"
+                    href="https://www.linkedin.com/in/janainarscdourado?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                     className="flex items-center gap-2 text-white px-3 py-2 rounded-lg hover:bg-blue-600 transition w-fit"
                   >
                     <Linkedin className="w-5 h-5" />
