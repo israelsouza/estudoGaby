@@ -86,15 +86,8 @@ const Footer = () => {
             <div className="space-y-3 text-sm">
               <div className="flex items-center space-x-3">
                 <MapPin className="h-4 w-4 text-green-200" />
-                <span className="text-green-100">Brasília - DF, Brasil</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Phone className="h-4 w-4 text-green-200" />
-                <span className="text-green-100">0800 123 4567</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Mail className="h-4 w-4 text-green-200" />
-                <span className="text-green-100">contato@exercito.mil.br</span>
+                <span className="text-green-100">Av. Srg. Mario Kozel Filho, 222 <br/> Paraíso, São Paulo <br/> SP, 04005-903
+                </span>
               </div>
             </div>
           </div>
