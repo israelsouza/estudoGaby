@@ -4,6 +4,7 @@ import HeaderArticles from "@/components/HeaderArticles";
 import IntroductionArticle from "@/components/IntroductionArticle";
 import SetorAdmSection from "@/components/SetorAdmSection";
 import ProcessosInternosSection from "@/components/ProcessosInternosSection";
+import References from "@/components/References"
 
 const Articles = () => {
   return <div className="min-h-screen">
@@ -13,6 +14,7 @@ const Articles = () => {
     <Comportamental />
     <SetorAdmSection />
     <ProcessosInternosSection />
+    <References />
   </div>;
 };
 
