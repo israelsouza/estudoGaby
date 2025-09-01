@@ -111,6 +111,7 @@ const Footer = () => {
                   {" "}
                   <a
                     href="https://www.linkedin.com/in/gabriela-gomes-orsi-ragagnan-156aa4287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    target="_blank"
                     className="flex items-center gap-2 text-white px-3 py-2 rounded-lg hover:bg-blue-600 transition w-fit"
                   >
                     <Linkedin className="w-5 h-5" />
@@ -120,6 +121,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="https://www.linkedin.com/in/janainarscdourado?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    target="_blank"
                     className="flex items-center gap-2 text-white px-3 py-2 rounded-lg hover:bg-blue-600 transition w-fit"
                   >
                     <Linkedin className="w-5 h-5" />
@@ -136,7 +138,7 @@ const Footer = () => {
               <ul className="space-y-2">
                 <li>
                   <a
-                    href="https://github.com/victor-trindade-santos"
+                    href="https://github.com/victor-trindade-santos" target="_blank"
                     className="flex items-center gap-2  text-white px-3 py-2 rounded-lg hover:bg-gray-800 transition w-fit"
                   >
                     <Github className="w-5 h-5" />
@@ -145,7 +147,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="https://github.com/Sofia-gith"
+                    href="https://github.com/Sofia-gith" target="_blank"
                     className="flex items-center gap-2  text-white px-3 py-2 rounded-lg hover:bg-gray-800 transition w-fit"
                   >
                     <Github className="w-5 h-5" />
@@ -154,7 +156,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="https://github.com/israelsouza"
+                    href="https://github.com/israelsouza" target="_blank"
                     className="flex items-center gap-2 text-white px-3 py-2 rounded-lg hover:bg-gray-800 transition w-fit"
                   >
                     <Github className="w-5 h-5" />
