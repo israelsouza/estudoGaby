@@ -23,7 +23,7 @@ const HeroSection = () => {
 
           
           <p className="text-xl md:text-2xl mb-8 text-green-100 leading-relaxed">
-            Site academico com o intuito de divulgar a pesquisa realizada pela estudante Gabriela Orsi estudante de Gestão de Recursos Humanos da Fatec
+            Site academico com o intuito de divulgar a pesquisa realizada pela estudante e pesquisadora de iniciação cientifica(CNPq) Gabriela Orsi estudante de Gestão de Recursos Humanos da Fatec
               Zona Leste.
           </p>
           

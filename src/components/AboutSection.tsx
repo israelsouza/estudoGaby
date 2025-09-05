@@ -49,7 +49,8 @@ const features = [
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             O Exército Brasileiro é uma das três Forças Armadas do Brasil, responsável pela defesa terrestre do país 
-            e por diversas ações que contribuem para o desenvolvimento nacional e a segurança da população.
+            e por diversas ações que contribuem para o desenvolvimento nacional e a segurança da população 
+            <a className="hover:text-blue-600" href="https://www.planalto.gov.br/ccivil_03/leis/l6880.htm" target="_blank"> (clique aqui para saber mais) </a>
           </p>
         </div>
 

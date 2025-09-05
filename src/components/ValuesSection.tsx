@@ -58,6 +58,7 @@ useEffect(() => {
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Os valores que orientam a conduta de todos os militares do Exército Brasileiro, 
             formando o caráter e a personalidade de cada soldado, sargento e oficial.
+            <a className="hover:text-blue-600" href="https://www.eb.mil.br/o-exercito/valores-militares" target="_blank"> (clique aqui para saber mais) </a>
           </p>
         </div>
 
