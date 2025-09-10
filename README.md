@@ -3,8 +3,11 @@
 <p align="center">
   <img src="./src/assets/exercito.png" alt="Capa do Projeto" width="400"/>
 </p>
+
 ## 📖 Sobre o Projeto  
+
 Este projeto é um site acadêmico desenvolvido para divulgar a pesquisa de iniciação científica de **Gabriela Orsi** (CNPq), estudante de Gestão de Recursos Humanos da FATEC Zona Leste.  
+
 O estudo explora o **setor administrativo do Comando Militar do Sudeste (CMSE)**, utilizando **People Analytics** e a **Metodologia DISC** para analisar o perfil comportamental dos sargentos e oficiais técnicos temporários.  
 
 🔗 **Acesse o site:** [Clique aqui](https://sofia-gith.github.io/estudoGaby/)  
