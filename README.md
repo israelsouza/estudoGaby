@@ -1,73 +1,58 @@
-# Welcome to your Lovable project
+# 📚 Tecnologia e Gestão no Comando Militar do Sudeste  
 
-## Project info
+![Capa do Projeto](./assets/exercito.png) 
 
-**URL**: https://lovable.dev/projects/20f23417-bf28-43ea-87c4-963a4657fd87
+## 📖 Sobre o Projeto  
+Este projeto é um site acadêmico desenvolvido para divulgar a pesquisa de iniciação científica de **Gabriela Orsi** (CNPq), estudante de Gestão de Recursos Humanos da FATEC Zona Leste.  
+O estudo explora o **setor administrativo do Comando Militar do Sudeste (CMSE)**, utilizando **People Analytics** e a **Metodologia DISC** para analisar o perfil comportamental dos sargentos e oficiais técnicos temporários.  
 
-## How can I edit this code?
+🔗 **Acesse o site:** [Clique aqui](https://sofia-gith.github.io/estudoGaby/)  
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## 🎯 Objetivos
+- Divulgar de forma acessível os resultados da pesquisa.  
+- Explicar como funciona o setor administrativo do Exército.  
+- Popularizar conceitos de **People Analytics** e **DISC** no contexto militar.  
+- Criar um material de apoio para futuros estudos na área de RH e gestão pública.  
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/20f23417-bf28-43ea-87c4-963a4657fd87) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠️ Tecnologias Utilizadas
+- **React + Vite** → Estrutura do front-end  
+- **TypeScript** → Tipagem e manutenção do código  
+- **Tailwind CSS** → Estilização rápida e responsiva  
+- **shadcn/ui** → Componentes de interface modernos  
+- **Lovable.dev** → Geração e deploy do projeto  
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## ✅ Pré-requisitos
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Antes de rodar o projeto, você precisa ter instalado na sua máquina:
 
-Follow these steps:
+- [Node.js](https://nodejs.org/) (versão 18 ou superior)
+- [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/) para gerenciar pacotes
+- Um editor de código (recomendado: [VS Code](https://code.visualstudio.com/))
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Para verificar se você tem o Node e o npm instalados:
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+```bash
+node -v
+npm -v
 
-# Step 3: Install the necessary dependencies.
-npm i
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+## 🚀 Como Rodar Localmente
+
+```bash
+# Clone o repositório
+git clone https://github.com/Sofia-gith/estudoGaby.git
+
+# Acesse a pasta do projeto
+cd estudoGaby
+
+# Instale as dependências
+npm install
+
+# Inicie o servidor de desenvolvimento
 npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/20f23417-bf28-43ea-87c4-963a4657fd87) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
